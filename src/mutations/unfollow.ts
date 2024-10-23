@@ -1,6 +1,6 @@
-export const followCharacter = async (id) => {
+export const unfollowCharacter = async (id) => {
   const response = await fetch("/api/follow", {
-    method: "POST",
+    method: "DELETE",
     headers: {
       "Content-Type": "application/json",
     },

@@ -15,11 +15,11 @@ const CHARACTERS_LIST_QUERY = gql`
 `;
 
 export const getCharacters = async () => {
-    const client = apolloClient();
+  const client = apolloClient();
 
   const { data } = await client.query({
     query: CHARACTERS_LIST_QUERY,
   });
 
   return data;
-}
+};
